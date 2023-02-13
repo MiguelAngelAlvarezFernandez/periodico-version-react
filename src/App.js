@@ -1,24 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import Encabezado from './Components/Encabezado/Encabezado';
+import Login from './Components/Login/Login';
+import Noticias from './Components/Noticias/Noticias';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h2>Encabezado</h2>
+      <Encabezado/>
+      <Noticias Titulo="Encabezado1" Contenido="Este es el contenido 1 de la noticia 1"/>
+      <Noticias Titulo="Encabezado2" Contenido="Este es el contenido de otra noticia que he llamado 2"/>
+    </>
   );
 }
 
