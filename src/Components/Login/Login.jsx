@@ -1,7 +1,9 @@
+import styles from "./Login.module.css"
+
 function Login() {
     return (
       <>
-        <button>Login</button>
+        <button className={styles.login}>Login</button>
       </>
     );
   }
