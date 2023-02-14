@@ -1,13 +1,14 @@
 import Login from "../Login/Login";
 import LogoMarca from "./LogoMarca.jpg"
+import styles from "./Encabezado.module.css"
 
 function Encabezado() {
     return (
-      <>
-        <img src={LogoMarca} alt="Logo Marca"/>
-        <h1>DIARIO MARCA</h1>
+      <header className={styles.encabezado}>
+        <img className={styles.logoMarca} src={LogoMarca} alt="Logo Marca"/>
+        <h1 className={styles.diarioName}>DIARIO MARCA</h1>
         <Login/>
-      </>
+      </header>
     );
   }
   
