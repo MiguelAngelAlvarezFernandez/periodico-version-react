@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function Contador() {
-    let [contador, setContador] = useState (0) // useState es un hook de React y esto es una desestructuración de un array
+    let [contador, setContador] = useState (0) // useState es un hook de React y esto es una desestructuración de un array  
     function incrementa() {setContador(contador+1)} 
 
     return (
