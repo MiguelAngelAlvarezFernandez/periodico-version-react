@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-function Rexistro() {
+function Login() {
 
     let [ nome, setNome ] = useState(" ")
 
@@ -14,12 +14,6 @@ function Rexistro() {
         setEmail(evento.target.value);
     }
 
-    let [Comentario, setComentario] = useState("Deja aquí tu comentario")
-
-    function manexadorDeComentario(evento) {
-        setComentario(evento.target.value)
-    }
-
     return (
         <>
         <label>
@@ -29,14 +23,9 @@ function Rexistro() {
         <label>
             Email:
             <input type="email" name="mail" value={email} onInput={manexadorDeInputEmail}/>
-            <p>Este é o contido de Email en maiusculas: {email.toUpperCase()}</p>
-        </label>
-        <label>
-            Ayúdanos a mejorar:
-            <textarea name="Comentario" cols="30" rows="10" value={Comentario} onInput={manexadorDeComentario}></textarea>
         </label>
         </>
     )
 }
 
-export default Rexistro
+export default Login

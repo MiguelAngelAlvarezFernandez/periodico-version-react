@@ -1,4 +1,4 @@
-import Login from "../Login/Login";
+import ButtonLogin from "../ButtonLogin/ButtonLogin";
 import LogoMarca from "./LogoMarca.jpg"
 import styles from "./Encabezado.module.css"
 
@@ -7,7 +7,7 @@ function Encabezado() {
       <header className={styles.encabezado}>
         <img className={styles.logoMarca} src={LogoMarca} alt="Logo Marca"/>
         <h1 className={styles.diarioName}>DIARIO MARCA</h1>
-        <Login/>
+        <ButtonLogin/>
       </header>
     );
   }

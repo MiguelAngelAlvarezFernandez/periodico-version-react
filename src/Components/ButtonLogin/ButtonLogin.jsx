@@ -1,6 +1,6 @@
-import styles from "./Login.module.css"
+import styles from "./ButtonLogin.module.css"
 
-function Login() {
+function ButtonLogin() {
     return (
       <>
         <button className={styles.login}>Login</button>
@@ -8,4 +8,4 @@ function Login() {
     );
   }
   
-  export default Login;
+  export default ButtonLogin;
