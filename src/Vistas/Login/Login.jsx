@@ -16,6 +16,7 @@ function Login() {
 
     return (
         <>
+        <h1>ESTO ES PARA EL LOGIN</h1>
         <label>
             Nombre:
             <input type="text" name="nome" value={nome} onInput={manexadorDeInputNome}/>

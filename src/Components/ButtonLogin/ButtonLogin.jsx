@@ -1,11 +1,11 @@
 import styles from "./ButtonLogin.module.css"
 
-function ButtonLogin() {
-    return (
-      <>
+function Button () {
+    return(
+        <>
         <button className={styles.login}>Login</button>
-      </>
+        </>
     );
-  }
-  
-  export default ButtonLogin;
+}
+
+export default Button;
