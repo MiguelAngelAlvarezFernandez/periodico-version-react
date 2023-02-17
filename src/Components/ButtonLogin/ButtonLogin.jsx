@@ -1,11 +1,11 @@
 import styles from "./ButtonLogin.module.css"
 
-function Button () {
+function ButtonLogin (props) {
     return(
         <>
-        <button className={styles.login}>Login</button>
+        <button className={styles.login} id="Login" onClick={props.manexador}>Login</button>
         </>
     );
 }
 
-export default Button;
+export default ButtonLogin;
