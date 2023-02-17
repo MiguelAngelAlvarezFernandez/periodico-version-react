@@ -1,0 +1,13 @@
+.Navegador{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    border: solid;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: red;
+    font-size: larger;
+    font-weight: bold;
+    max-width: 70%;
+    margin: auto;
+}

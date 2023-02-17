@@ -1,17 +1,16 @@
-import { useState } from "react";
+import styles from "./Navegador.module.css"
 import Principal from "../../Vistas/Principal/Principal";
 import Local from "../../Vistas/Local/Local";
 import Nacional from "../../Vistas/Nacional/Nacional";
 import Rexistro from "../../Vistas/Rexistro/Rexistro";
 import Login from "../../Vistas/Login/Login";
-import ButtonLogin from "../ButtonLogin/ButtonLogin"
 
 function Navegador(props) {
 
     return (
       <>
       <nav>
-        <ul>
+        <ul className={styles.Navegador}>
           <li>
             <a id="Principal" onClick={props.manexadorClick}>Principal</a>
           </li>

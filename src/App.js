@@ -13,8 +13,6 @@ function App() {
   return (
     <>
       <Encabezado manexadorClick={manexadorClick}/>
-
-      <p>NAVEGADOR</p>
       <Navegador vista={vista} setVista={setVista} manexadorClick={manexadorClick}/>
       
     </>

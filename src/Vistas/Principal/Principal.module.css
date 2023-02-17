@@ -1,0 +1,14 @@
+.Portada{
+    text-align: center;
+}
+
+.Seccion{
+    text-align: center;
+}
+
+.ArtSections{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}

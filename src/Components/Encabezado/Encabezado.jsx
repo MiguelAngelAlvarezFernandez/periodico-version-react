@@ -7,7 +7,7 @@ function Encabezado(props) {
       <header className={styles.encabezado}>
         <img className={styles.logoMarca} src={LogoMarca} alt="Logo Marca"/>
         <h1 className={styles.diarioName}>DIARIO MARCA</h1>
-        <ButtonLogin manexador={props.manexadorClick}/>
+        <ButtonLogin manexadorClick={props.manexadorClick}/>
       </header>
     );
   }
