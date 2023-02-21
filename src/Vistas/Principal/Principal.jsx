@@ -6,25 +6,25 @@ function Principal() {
       <main>
         <h1 className={styles.Portada}>PORTADA</h1>
 
-        <section>
+        <section className={styles.secciones}>
         <h2 className={styles.Seccion}>SECCION NACIONAL</h2>
         <div className={styles.ArtSections}>
-        <article>
-        <Noticias Titulo="Tit.Portada Noticia Nacional 1" Contenido="Contenido.Portada Noticia Nacional 1"/>
+        <article className={styles.articles}>
+        <Noticias Titulo="Tit.Portada Noticia Nacional 1" Contenido="Contenido.Portada Noticia Nacional 1, Contenido.Portada Noticia Nacional 1Contenido.Portada Noticia Nacional 1Contenido.Portada Noticia Nacional 1Contenido.Portada Noticia Nacional 1Contenido.Portada Noticia Nacional 1Contenido.Portada Noticia Nacional 1"/>
         </article>
-        <article>
+        <article className={styles.articles}>
         <Noticias Titulo="Tit.Portada Noticia Nacional 2" Contenido="Contenido.Portada Noticia Nacional 2"/>
         </article>
         </div>
         </section>
 
-        <section>
+        <section className={styles.secciones}>
         <h2 className={styles.Seccion}>SECCION LOCAL</h2>
         <div className={styles.ArtSections}>
-        <article>
+        <article className={styles.articles}>
         <Noticias Titulo="Tit.Portada Noticia Local 1" Contenido="Contenido.Portada Noticia Local 1"/>
         </article>
-        <article>
+        <article className={styles.articles}>
         <Noticias Titulo="Tit.Portada Noticia Local 2" Contenido="Contenido.Portada Noticia Local 2"/>
         </article>
         </div>

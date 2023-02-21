@@ -1,25 +1,20 @@
-.Portada{
-    text-align: center;
-}
-
-.secciones{
-    border: solid;
+.sectionNacional{
+    border:solid;
     border-radius: 30px;
     margin: 30px;
 }
 
-.Seccion{
+.encabezadoNacional{
     text-align: center;
+    font-size: 4em;
 }
-
-.ArtSections{
+.artsNacional{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
+    flex-grow: 1;
 }
-.articles{
+.article{
     flex-grow: 1;
     max-width: 45%;
 }

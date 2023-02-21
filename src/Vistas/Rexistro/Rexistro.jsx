@@ -1,4 +1,5 @@
 import { useState } from "react"
+import styles from "./Rexistro.module.css"
 
 function Rexistro() {
 
@@ -29,23 +30,25 @@ function Rexistro() {
     }
 
     return (
-        <>
-        <label>
+        <fieldset className={styles.formulario}>
+        <legend>FORMULARIO REGISTRO</legend>
+        <label className={styles.input}>
             Nombre:
             <input type="text" name="nome" value={nome} onInput={manexadorDeInputNome}/>
         </label>
-        <label>
+        <label className={styles.input}>
             Email:
             <input type="email" name="mail" value={email} onInput={manexadorDeInputEmail}/>
             <p>Este é o contido de Email en maiusculas: {email.toUpperCase()}</p>
         </label>
 
-        <label>
+        <label className={styles.input}>
             Contraseña:
             <input type="password" name="contraseña" value={contraseña} onInput={manexadorDeInputContraseña}/>
         </label>
 
-        <p>Información de Cokies</p>
+        <fieldset className={styles.cookies}>
+        <legend>Información de Cookies</legend>
         <label>
             <input type="radio" name="Cookies" value="AceptaTodo" onClick={manexadorCookies}/>
             Acepto todas las cookies.
@@ -58,12 +61,12 @@ function Rexistro() {
             <input type="radio" name="Cookies" value="NoAcepta" onClick={manexadorCookies}/>
             No acepto cookies.
         </label>
-
-        <label>
+        </fieldset>
+        <label className={styles.input}>
             Ayúdanos a mejorar:
             <textarea name="Comentario" cols="30" rows="10" value={Comentario} onInput={manexadorDeComentario}></textarea>
         </label>
-        </>
+        </fieldset>
     )
 }
 
