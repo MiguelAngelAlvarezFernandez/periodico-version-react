@@ -21,7 +21,7 @@ function Rexistro() {
     let [ Cookies, setCookies ] =useState("")
     function manexadorCookies(evento){
         setCookies(evento.target.value)
-        console.log(Cookies)
+        console.log(Cookies) //El console.log solo lo pongo para comprobar en la consola que está funcionando correctamente el radio.
     }
 
     let [Comentario, setComentario] = useState("Deja aquí tu comentario")
@@ -65,6 +65,9 @@ function Rexistro() {
         <label className={styles.input}>
             Ayúdanos a mejorar:
             <textarea name="Comentario" cols="30" rows="10" value={Comentario} onInput={manexadorDeComentario}></textarea>
+        </label>
+        <label>
+            <input type="submit" value="Submit"></input>
         </label>
         </fieldset>
     )

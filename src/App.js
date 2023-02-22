@@ -11,11 +11,10 @@ function App() {
     setVista(evento.target.id)
   }
   return (
-    <>
+    <div>
       <Encabezado manexadorClick={manexadorClick}/>
-      <Navegador vista={vista} setVista={setVista} manexadorClick={manexadorClick}/>
-      
-    </>
+      <Navegador vista={vista} setVista={setVista} manexadorClick={manexadorClick}/>   
+    </div>
   );
 }
 

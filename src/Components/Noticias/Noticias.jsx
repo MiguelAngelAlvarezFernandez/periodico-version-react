@@ -7,6 +7,7 @@ function Noticias(props) {
         <h2>{props.Titulo}</h2>
         <p>{props.Contenido}</p>
         <img className={styles.imagenPrueba} src={imagenPrueba} alt="Imagen Prueba"/>
+        <p>{props.Noticia}</p>
       </article>
     );
   }
