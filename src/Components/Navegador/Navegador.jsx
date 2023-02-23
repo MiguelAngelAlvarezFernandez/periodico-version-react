@@ -5,6 +5,8 @@ import Nacional from "../../Vistas/Nacional/Nacional";
 import Rexistro from "../../Vistas/Rexistro/Rexistro";
 import Login from "../../Vistas/Login/Login";
 
+
+
 function Navegador(props) {
 
     return (
@@ -25,8 +27,6 @@ function Navegador(props) {
           </li>
         </ul> 
       </nav>
-
-      
 
       {props.vista==="Principal" && <Principal/>}
       {props.vista==="Local" && <Local/>}

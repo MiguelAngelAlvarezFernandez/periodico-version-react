@@ -5,12 +5,13 @@ import Articulos from "../Articulos/Articulos";
 
 import imagenPrueba from "../../Components/Noticias/imagenPrueba.jpg"
 
-function Principal() {
+function Principal(props) {
 
-    /*const[Nacional1, SetNacional1] = useState(false)
-    function manexadorNacional1(){
-    SetNacional1(true)
-    }*/
+  const[Nacional1, setNacional1] = useState(false)
+  function manexadorNacional1(){
+  let nuevoValor=true
+  setNacional1(nuevoValor)
+}
 
     return (
       <main>
@@ -40,8 +41,8 @@ function Principal() {
         </div>
         </section>
 
-        {/*Nacional1 && <Articulos/>*/}
-
+        {Nacional1===true && <Articulos/>}
+        
       </main>
     );
   }
