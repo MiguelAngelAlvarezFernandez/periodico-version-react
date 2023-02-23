@@ -3,13 +3,13 @@ import styles from "./Principal.module.css";
 import { useState } from "react";
 import Articulos from "../Articulos/Articulos";
 
-function Principal() {
+function Principal(props) {
 
-    const[Nacional1, setNacional1] = useState(false)
-    function manexadorNacional1(){
-      let nuevoValor=true
-      setNacional1(nuevoValor)
-    }
+  const[Nacional1, setNacional1] = useState(false)
+  function manexadorNacional1(){
+  let nuevoValor=true
+  setNacional1(nuevoValor)
+}
 
     return (
       <main>
@@ -40,7 +40,7 @@ function Principal() {
         </section>
 
         {Nacional1===true && <Articulos/>}
-
+        
       </main>
     );
   }

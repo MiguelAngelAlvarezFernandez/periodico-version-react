@@ -6,14 +6,14 @@ import { useState } from 'react';
 function App() {
 
   const [vista, setVista] = useState("Principal")
-
   function manexadorClick (evento){
     setVista(evento.target.id)
   }
+
   return (
     <div>
       <Encabezado manexadorClick={manexadorClick}/>
-      <Navegador vista={vista} setVista={setVista} manexadorClick={manexadorClick}/>   
+      <Navegador vista={vista} manexadorClick={manexadorClick}/>   
     </div>
   );
 }
